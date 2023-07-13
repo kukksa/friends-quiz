@@ -1,0 +1,126 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1600885094287-94258fe8a91c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#8f418f;
+}
+.container {
+    background-color:rgba(121, 133, 149, 0.821);
+    border-radius: 20px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    background: linear-gradient(to left,#eee6ec, #80e5f9, #eee6ec);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.containerQuestions {   
+display: flex;
+flex-wrap: wrap;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 452px;
+    height: 470px;
+    margin: 10px;
+    
+}
+
+label {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    
+}
+form {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #efe7e7;
+    background: linear-gradient(to left,#f2f9f9, #80e5f9, #f2f9f9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+input {
+    margin-right: 15px;
+    border: 2px solid rgb(135, 13, 133);
+    box-shadow: 0 0 0 2px #8f418f;
+    appearance:none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #6c1951c1;
+    cursor: pointer; 
+    outline: none;
+    position: relative;
+    transition: 0.2s all linear;
+}
+input:checked {
+    border: 6px solid #80e5f9;
+}
+
+img {
+    border-radius: 20px;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    background-color: #80e5f9;
+    cursor: pointer;
+    color: #8f418f;
+    border: none;
+}
+
+#show {
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    background: linear-gradient(to left,#eee6ec, #80e5f9, #eee6ec);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    .question {
+        margin: 5px;
+        height: 350px;
+    }
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    form {
+        font-size: 15px;
+    }
+    input {
+        width: 8px;
+        height: 8px;
+}
+}
